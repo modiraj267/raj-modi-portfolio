@@ -3,31 +3,60 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 245, 247, 250;
+  --background-start-rgb: 5, 5, 5;
+  --background-end-rgb: 10, 10, 12;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
+  overflow-x: hidden;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  
+  .glassmorphism {
+    @apply bg-cyber-secondary/50 backdrop-blur-md border border-white/5;
+  }
+
+  .neon-text-cyan {
+    text-shadow: 0 0 10px rgba(0, 214, 255, 0.5), 0 0 20px rgba(0, 214, 255, 0.3);
+  }
+
+  .neon-text-purple {
+    text-shadow: 0 0 10px rgba(138, 43, 255, 0.5), 0 0 20px rgba(138, 43, 255, 0.3);
+  }
+
+  .neon-border-hover {
+    @apply transition-all duration-300;
+  }
+  .neon-border-hover:hover {
+    @apply border-cyber-cyan shadow-[0_0_15px_rgba(0,214,255,0.4)];
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyber-cyan to-cyber-purple;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00D6FF;
 }
