@@ -9,6 +9,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const navLinks = [
   { name: "Start", href: "#start" },
   { name: "About Player", href: "#about" },
+  { name: "Career XP", href: "#experience" },
   { name: "Skill Inventory", href: "#skills" },
   { name: "Missions", href: "#missions" },
   { name: "Achievements", href: "#achievements" },

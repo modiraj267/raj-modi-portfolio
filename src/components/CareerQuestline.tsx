@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import SpawnPoint from "./sections/SpawnPoint";
+import Experience from "./sections/Experience";
 import SkillInventory from "./sections/SkillInventory";
 import MissionsCompleted from "./sections/MissionsCompleted";
 import AchievementsUnlocked from "./sections/AchievementsUnlocked";
@@ -35,6 +36,7 @@ export default function CareerQuestline() {
 
       <div className="pl-0 md:pl-24">
         <SpawnPoint />
+        <Experience />
         <SkillInventory />
         <MissionsCompleted />
         <AchievementsUnlocked />
