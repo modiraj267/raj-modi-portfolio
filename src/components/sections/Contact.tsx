@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Mail, MapPin, FileText, Phone, Download } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-export default function FinalQuest() {
+export default function Contact() {
   return (
     <section id="contact" className="min-h-screen py-12 md:py-20 relative flex flex-col justify-between">
       <div className="container mx-auto px-5 md:px-6 relative z-10 flex-grow flex flex-col items-center justify-center">
@@ -16,11 +16,7 @@ export default function FinalQuest() {
           transition={{ duration: 0.8 }}
           className="text-center max-w-3xl mx-auto w-full"
         >
-          <div className="inline-block px-4 py-1 rounded-full border border-cyber-cyan/30 bg-cyber-cyan/10 text-cyber-cyan text-xs sm:text-sm font-mono tracking-widest uppercase mb-6">
-            Stage 5: Final Quest
-          </div>
-          
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 text-balance">Ready to start the <br /><span className="text-gradient">next mission?</span></h2>
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 text-balance">Let&apos;s build <br /><span className="text-gradient">something together.</span></h2>
           
           <p className="text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed text-balance">
             I’m open to internships and fresher opportunities in Python Development, Data Analytics, AI/ML, and Full Stack Development.
@@ -29,7 +25,7 @@ export default function FinalQuest() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16 w-full">
             <a
               href="mailto:modiraj267@gmail.com"
-              className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 rounded-full bg-cyber-cyan text-black font-bold hover:bg-white transition-all shadow-[0_0_20px_rgba(0,214,255,0.4)] flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 rounded-full bg-cyber-cyan text-black font-bold hover:bg-white transition-all shadow-[0_0_10px_rgba(0,214,255,0.2)] flex items-center justify-center gap-2"
             >
               <Mail size={20} /> Contact Me
             </a>
@@ -78,7 +74,7 @@ export default function FinalQuest() {
       {/* Footer */}
       <footer className="container mx-auto px-5 md:px-6 py-8 border-t border-white/5 mt-20 text-center relative z-10">
         <p className="text-sm font-mono text-gray-500">
-          © 2026 Raj Modi. Built with passion, code, and continuous leveling up.
+          © {new Date().getFullYear()} Raj Modi. Built with passion and code.
         </p>
       </footer>
       

@@ -77,13 +77,12 @@ export default function Experience() {
       <div className="container mx-auto px-5 md:px-6 relative z-10">
         
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-6 md:mb-8 sm:justify-end sm:text-right">
-          <h2 className="text-3xl md:text-5xl font-bold text-balance">Career XP</h2>
-          <div className="hidden sm:block h-[1px] w-12 bg-cyber-purple/50" />
-          <span className="text-cyber-purple font-mono tracking-widest uppercase text-xs sm:text-sm">Stage 1.5</span>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-6 md:mb-8">
+          <h2 className="text-3xl md:text-5xl font-bold text-balance">Experience</h2>
+          <div className="hidden sm:block h-[1px] w-24 bg-cyber-purple/30" />
         </div>
         
-        <p className="text-gray-400 max-w-2xl sm:ml-auto sm:text-right mb-12 md:mb-16">
+        <p className="text-gray-400 max-w-2xl mb-12 md:mb-16">
           Industry internships and real-world development experience across AI/ML, Python, full-stack web development, enterprise software, and government web portal delivery.
         </p>
 
@@ -126,8 +125,7 @@ export default function Experience() {
 
                 {/* Experience Card */}
                 <motion.div 
-                  whileHover={{ scale: 1.01 }}
-                  className="glassmorphism p-6 md:p-8 rounded-2xl border border-white/5 hover:border-cyber-purple/50 transition-all hover:shadow-[0_0_30px_rgba(188,19,254,0.15)]"
+                  className="glassmorphism p-6 md:p-8 rounded-2xl border border-white/5 hover:border-cyber-purple/30 transition-all"
                 >
                   <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-4 mb-4">
                     <div>

@@ -11,14 +11,13 @@ const certificates = [
   { name: "Data Structures Problem Solving Workshop", issuer: "LDRP-ITR", isPlaceholder: false, certificateUrl: "/certificates/data-structures-workshop.pdf" },
 ];
 
-export default function AchievementsUnlocked() {
+export default function Certifications() {
   return (
     <section id="achievements" className="min-h-[70vh] py-12 md:py-20 relative">
       <div className="container mx-auto px-5 md:px-6 relative z-10">
-        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-10 md:mb-12 sm:justify-end sm:text-right">
-          <h2 className="text-3xl md:text-5xl font-bold text-balance">Achievements Unlocked</h2>
-          <div className="hidden sm:block h-[1px] w-12 bg-yellow-500/50" />
-          <span className="text-yellow-500 font-mono tracking-widest uppercase text-xs sm:text-sm">Stage 4</span>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-10 md:mb-12">
+          <h2 className="text-3xl md:text-5xl font-bold text-balance">Certifications</h2>
+          <div className="hidden sm:block h-[1px] w-24 bg-cyber-blue/30" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -32,8 +31,8 @@ export default function AchievementsUnlocked() {
               whileHover={!cert.isPlaceholder ? { y: -5 } : {}}
               className={`p-6 rounded-2xl flex flex-col items-center text-center relative overflow-hidden ${
                 cert.isPlaceholder
-                  ? "border border-dashed border-white/20 bg-white/5 opacity-50"
-                  : "glassmorphism hover:border-yellow-500/50 hover:shadow-[0_0_20px_rgba(234,179,8,0.2)] transition-all"
+                  ? "border border-white/10 bg-white/5 opacity-50"
+                  : "glassmorphism hover:border-cyber-blue/30 transition-all border border-white/5"
               }`}
             >
               {!cert.isPlaceholder && (
@@ -43,7 +42,7 @@ export default function AchievementsUnlocked() {
               )}
               
               <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${
-                cert.isPlaceholder ? "bg-white/10 text-white/30" : "bg-gradient-to-br from-yellow-400 to-yellow-600 text-black"
+                cert.isPlaceholder ? "bg-white/10 text-white/30" : "bg-cyber-blue/10 text-cyber-blue"
               }`}>
                 <Award size={32} />
               </div>
@@ -56,7 +55,7 @@ export default function AchievementsUnlocked() {
                   href={cert.certificateUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-auto px-4 py-2 w-full rounded-lg border border-yellow-500/50 text-yellow-500 text-sm font-medium hover:bg-yellow-500 hover:text-black transition-colors"
+                  className="mt-auto px-4 py-2 w-full rounded-lg border border-cyber-blue/50 text-cyber-blue text-sm font-medium hover:bg-cyber-blue hover:text-black transition-colors"
                 >
                   View Certificate
                 </a>

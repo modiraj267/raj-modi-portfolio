@@ -2,12 +2,12 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-import SpawnPoint from "./sections/SpawnPoint";
+import About from "./sections/About";
 import Experience from "./sections/Experience";
-import SkillInventory from "./sections/SkillInventory";
-import MissionsCompleted from "./sections/MissionsCompleted";
-import AchievementsUnlocked from "./sections/AchievementsUnlocked";
-import FinalQuest from "./sections/FinalQuest";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Certifications from "./sections/Certifications";
+import Contact from "./sections/Contact";
 
 export default function CareerQuestline() {
   const ref = useRef<HTMLDivElement>(null);
@@ -34,13 +34,13 @@ export default function CareerQuestline() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-cyber-primary border-2 border-cyber-cyan" />
       </div>
 
-      <div className="pl-0 md:pl-24">
-        <SpawnPoint />
+      <div className="pl-0 md:pl-12 lg:pl-24">
+        <About />
         <Experience />
-        <SkillInventory />
-        <MissionsCompleted />
-        <AchievementsUnlocked />
-        <FinalQuest />
+        <Skills />
+        <Projects />
+        <Certifications />
+        <Contact />
       </div>
     </div>
   );

@@ -7,13 +7,13 @@ import { Menu, X } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const navLinks = [
-  { name: "Start", href: "#start" },
-  { name: "About Player", href: "#about" },
-  { name: "Career XP", href: "#experience" },
-  { name: "Skill Inventory", href: "#skills" },
-  { name: "Missions", href: "#missions" },
-  { name: "Achievements", href: "#achievements" },
-  { name: "Party Invite", href: "#contact" },
+  { name: "Home", href: "#start" },
+  { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#missions" },
+  { name: "Certifications", href: "#achievements" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {

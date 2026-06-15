@@ -17,7 +17,7 @@ export default function Hero() {
         >
           <source src="/assets/hero-animation.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-cyber-primary/90 via-cyber-primary/60 to-cyber-primary z-10" />
+        <div className="absolute inset-0 bg-cyber-primary/85 z-10" />
       </div>
 
       <div className="container mx-auto px-5 md:px-6 relative z-20">
@@ -28,10 +28,6 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="space-y-6 max-w-3xl"
         >
-          <div className="inline-block px-3 py-1 rounded-full border border-cyber-purple/30 bg-cyber-purple/10 text-cyber-purple text-sm font-medium tracking-wider uppercase mb-2">
-            Status: Online
-          </div>
-          
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter text-balance drop-shadow-xl">
             Hi, I&apos;m <br />
             <span className="text-gradient">Raj Modi</span>
@@ -42,15 +38,15 @@ export default function Hero() {
           </h2>
           
           <p className="text-lg text-gray-400 max-w-lg leading-relaxed">
-            Leveling up through real-world projects in Python, SQL, AI/ML, and modern web development. I build data-driven and AI-powered applications with clean code, practical problem-solving, and a continuous learning mindset.
+            I build practical software, data dashboards, and AI/ML applications using Python, SQL, React, FastAPI, and modern web technologies.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4 w-full sm:w-auto">
             <a
               href="#missions"
-              className="w-full sm:w-auto px-8 py-3 rounded-full bg-cyber-cyan text-black font-semibold hover:bg-white transition-all shadow-[0_0_15px_rgba(0,214,255,0.4)] text-center"
+              className="w-full sm:w-auto px-8 py-3 rounded-full bg-cyber-cyan text-black font-semibold hover:bg-white transition-all text-center"
             >
-              View Missions
+              View Projects
             </a>
             <a
               href="/Raj_Modi_Resume.pdf"
@@ -59,31 +55,34 @@ export default function Hero() {
             >
               Download Resume
             </a>
+            <a
+              href="#contact"
+              className="w-full sm:w-auto px-8 py-3 rounded-full border border-cyber-purple text-cyber-purple hover:bg-cyber-purple hover:text-white transition-all text-center"
+            >
+              Contact Me
+            </a>
           </div>
 
-          {/* Player Status Card */}
+          {/* Developer Profile Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="mt-12 glassmorphism p-5 sm:p-6 rounded-2xl w-full max-w-sm sm:max-w-md border-l-4 border-l-cyber-purple neon-border-hover"
+            className="mt-12 glassmorphism p-5 sm:p-6 rounded-2xl w-full max-w-sm sm:max-w-md border-l-4 border-l-cyber-cyan/50"
           >
-            <div className="grid grid-cols-2 gap-y-2 text-sm">
-              <div className="text-gray-500">Player</div>
+            <div className="grid grid-cols-2 gap-y-3 text-sm">
+              <div className="text-gray-500 font-mono">Developer</div>
               <div className="font-medium text-white">Raj Modi</div>
               
-              <div className="text-gray-500">Class</div>
-              <div className="font-medium text-cyber-cyan">Developer / Analyst</div>
+              <div className="text-gray-500 font-mono">Role</div>
+              <div className="font-medium text-cyber-cyan">Software / Data Analyst</div>
               
-              <div className="text-gray-500">Current Quest</div>
-              <div className="font-medium text-white">Building AI/Data Apps</div>
-              
-              <div className="text-gray-500">Location</div>
+              <div className="text-gray-500 font-mono">Location</div>
               <div className="font-medium text-white">Gujarat, India</div>
               
-              <div className="text-gray-500 pt-2">XP Stack</div>
-              <div className="font-medium text-gray-300 pt-2 text-xs">
-                Python • SQL • AI/ML • React • FastAPI
+              <div className="text-gray-500 font-mono pt-2 border-t border-white/5">Tech Stack</div>
+              <div className="font-medium text-gray-300 pt-2 border-t border-white/5 text-xs">
+                Python • SQL • React • FastAPI
               </div>
             </div>
           </motion.div>

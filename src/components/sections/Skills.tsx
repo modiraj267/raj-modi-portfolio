@@ -21,21 +21,20 @@ const categories = {
   "Tools": ["Git", "GitHub", "VS Code", "Google Colab", "Jupyter Notebook"]
 };
 
-export default function SkillInventory() {
+export default function Skills() {
   return (
     <section id="skills" className="min-h-screen relative py-12 md:py-20">
       <div className="container mx-auto px-5 md:px-6 relative z-10">
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-10 md:mb-12">
-          <span className="text-cyber-purple font-mono tracking-widest uppercase text-xs sm:text-sm">Stage 2</span>
-          <div className="hidden sm:block h-[1px] w-12 bg-cyber-purple/50" />
-          <h2 className="text-3xl md:text-5xl font-bold text-balance">Skill Inventory</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-balance">Skills</h2>
+          <div className="hidden sm:block h-[1px] w-24 bg-cyber-purple/30" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Main XP Bars */}
           <div className="space-y-8">
             <h3 className="text-xl font-mono text-gray-400 mb-6 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-cyber-cyan animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-cyber-cyan" />
               Core Competencies
             </h3>
             {skills.map((skill, index) => (
@@ -75,7 +74,7 @@ export default function SkillInventory() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="glassmorphism p-5 rounded-xl border-t border-t-white/10 hover:border-cyber-purple/50 transition-colors group"
+                className="glassmorphism p-5 rounded-xl border-t border-t-white/10 hover:border-cyber-purple/30 transition-colors group"
               >
                 <h4 className="text-cyber-purple font-semibold mb-3 group-hover:text-cyber-cyan transition-colors">{category}</h4>
                 <div className="flex flex-wrap gap-2">
