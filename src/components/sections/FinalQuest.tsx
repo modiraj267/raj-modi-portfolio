@@ -50,14 +50,14 @@ export default function FinalQuest() {
             </a>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
             <a href="mailto:modiraj267@gmail.com" className="glassmorphism p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors group">
               <Mail className="text-gray-400 group-hover:text-cyber-cyan transition-colors" />
-              <span className="text-xs font-mono">Email</span>
+              <span className="text-xs font-mono text-center break-all">modiraj267@gmail.com</span>
             </a>
             <a href="tel:+919624419624" className="glassmorphism p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors group">
               <Phone className="text-gray-400 group-hover:text-cyber-cyan transition-colors" />
-              <span className="text-xs font-mono">Phone</span>
+              <span className="text-xs font-mono text-center whitespace-nowrap">+91 96244 19624</span>
             </a>
             <div className="glassmorphism p-4 rounded-xl flex flex-col items-center justify-center gap-2">
               <MapPin className="text-gray-400" />

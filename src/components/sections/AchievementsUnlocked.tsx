@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 import { Award } from "lucide-react";
 
 const certificates = [
-  { name: "Python for Data Science", issuer: "DataCamp / IBM" },
-  { name: "Deloitte Data Analytics Job Simulation", issuer: "Forage" },
-  { name: "Data Analysis Course", issuer: "Online Certification" },
-  { name: "Future Achievement", issuer: "In Progress", isPlaceholder: true },
+  { name: "Python for Data Science — Elite Certificate", issuer: "NPTEL / IIT Madras", isPlaceholder: false, certificateUrl: "/certificates/nptel-python-for-data-science.pdf" },
+  { name: "Deloitte Data Analytics Job Simulation", issuer: "Forage", isPlaceholder: false, certificateUrl: "/certificates/deloitte-data-analytics.pdf" },
+  { name: "Linear Algebra for Machine Learning", issuer: "LDRP-ITR & Gujarat University", isPlaceholder: false, certificateUrl: "/certificates/linear-algebra-ml.pdf" },
+  { name: "AI Tools & ChatGPT Workshop", issuer: "be10x", isPlaceholder: false, certificateUrl: "/certificates/ai-tools-chatgpt-workshop.pdf" },
+  { name: "Data Structures Problem Solving Workshop", issuer: "LDRP-ITR", isPlaceholder: false, certificateUrl: "/certificates/data-structures-workshop.pdf" },
 ];
 
 export default function AchievementsUnlocked() {
@@ -20,7 +21,7 @@ export default function AchievementsUnlocked() {
           <span className="text-yellow-500 font-mono tracking-widest uppercase text-xs sm:text-sm">Stage 4</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certificates.map((cert, index) => (
             <motion.div
               key={cert.name}
@@ -48,7 +49,26 @@ export default function AchievementsUnlocked() {
               </div>
               
               <h3 className="font-bold text-lg text-white mb-2">{cert.name}</h3>
-              <p className="text-sm font-mono text-gray-400 mt-auto">{cert.issuer}</p>
+              <p className="text-sm font-mono text-gray-400 mt-auto mb-4">{cert.issuer}</p>
+
+              {cert.certificateUrl ? (
+                <a
+                  href={cert.certificateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto px-4 py-2 w-full rounded-lg border border-yellow-500/50 text-yellow-500 text-sm font-medium hover:bg-yellow-500 hover:text-black transition-colors"
+                >
+                  View Certificate
+                </a>
+              ) : (
+                <div className="mt-auto w-full flex flex-col items-center">
+                  <button disabled className="px-4 py-2 w-full rounded-lg border border-gray-600/50 text-gray-500 text-sm font-medium cursor-not-allowed">
+                    View Certificate
+                  </button>
+                  <span className="text-[10px] text-gray-500 mt-1">Certificate file not added yet</span>
+                  {/* TODO: Add certificate file to public/certificates/ and update certificateUrl */}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

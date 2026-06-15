@@ -6,13 +6,22 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    title: "AayuUnify — Premium Ayurvedic D2C Storefront",
+    type: "Full Stack / E-Commerce",
+    difficulty: "Advanced",
+    tech: ["Next.js 14", "TypeScript", "Firebase Auth", "Firestore", "Tailwind CSS", "Razorpay", "Vercel"],
+    desc: "A premium Ayurvedic D2C e-commerce storefront featuring a merchant admin console, real-time order tracking, WhatsApp checkout fallback, and role-based access.",
+    github: "https://github.com/modiraj267/aayunify",
+    link: "https://aayunify.vercel.app/",
+  },
+  {
     title: "AI Plant Disease Detection",
     type: "AI/ML",
     difficulty: "Hard",
     tech: ["Python", "TensorFlow", "Streamlit", "Google Translate API"],
     desc: "A multilingual plant disease detection system that analyzes plant leaf images and provides disease prediction with possible solutions.",
     github: "https://github.com/modiraj267",
-    link: "#",
+    link: "https://github.com/modiraj267",
   },
   {
     title: "Sales Analytics Dashboard",
@@ -21,7 +30,7 @@ const projects = [
     tech: ["Python", "Streamlit", "Pandas", "Plotly"],
     desc: "A business analytics dashboard that allows CSV/Excel upload, generates KPIs, interactive charts, and business insights.",
     github: "https://github.com/modiraj267",
-    link: "#",
+    link: "https://github.com/modiraj267",
   },
   {
     title: "AI Posture Correction & Rep Counting",
@@ -30,7 +39,7 @@ const projects = [
     tech: ["Python", "Mediapipe", "Streamlit", "pyttsx3"],
     desc: "A real-time fitness assistant that detects exercise posture and counts reps for push-ups, squats, and lunges with voice feedback.",
     github: "https://github.com/modiraj267",
-    link: "#",
+    link: "https://github.com/modiraj267",
   },
   {
     title: "Personalized Medical Recommendation System",
@@ -39,7 +48,7 @@ const projects = [
     tech: ["Python", "Flask", "Machine Learning", "Pandas"],
     desc: "A Flask-based ML system that predicts possible diseases from symptoms and recommends medicines, diet, and workout suggestions.",
     github: "https://github.com/modiraj267",
-    link: "#",
+    link: "https://github.com/modiraj267",
   },
   {
     title: "VendorBridge Hackathon Project",
@@ -48,7 +57,7 @@ const projects = [
     tech: ["React.js", "FastAPI", "PostgreSQL"],
     desc: "A vendor management and procurement platform built for a hackathon using modern full-stack technologies.",
     github: "https://github.com/modiraj267",
-    link: "#",
+    link: "https://github.com/modiraj267",
   },
 ];
 
