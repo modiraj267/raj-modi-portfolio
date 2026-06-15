@@ -33,11 +33,11 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "glassmorphism py-4" : "bg-transparent py-6"
+        scrolled ? "glassmorphism py-4" : "bg-transparent py-4 md:py-6"
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold tracking-tighter hover:text-cyber-cyan transition-colors">
+      <div className="container mx-auto px-5 md:px-6 flex items-center justify-between">
+        <Link href="/" className="text-xl md:text-2xl font-bold tracking-tighter hover:text-cyber-cyan transition-colors z-50">
           Raj Modi
         </Link>
 
@@ -75,10 +75,11 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-gray-300 hover:text-white"
+          className="md:hidden text-gray-300 hover:text-white p-2 z-50 focus:outline-none"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
         >
-          {mobileMenuOpen ? <X /> : <Menu />}
+          {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
@@ -87,31 +88,31 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden absolute top-full left-0 w-full glassmorphism py-4 border-t border-white/5"
+          className="md:hidden absolute top-full left-0 w-full glassmorphism py-6 border-t border-white/5 shadow-2xl"
         >
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-6">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-gray-300 hover:text-cyber-cyan transition-colors"
+                className="text-lg text-gray-300 hover:text-cyber-cyan transition-colors w-full text-center py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-            <div className="flex space-x-6 py-2">
-              <a href="https://github.com/modiraj267" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                <FaGithub size={24} />
+            <div className="flex space-x-8 py-4">
+              <a href="https://github.com/modiraj267" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white p-2">
+                <FaGithub size={28} />
               </a>
-              <a href="https://www.linkedin.com/in/raj-modi-1455b2279/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0A66C2]">
-                <FaLinkedin size={24} />
+              <a href="https://www.linkedin.com/in/raj-modi-1455b2279/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0A66C2] p-2">
+                <FaLinkedin size={28} />
               </a>
             </div>
             <Link
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="px-6 py-2 rounded-full border border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan/10"
+              className="px-8 py-3 rounded-full border border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan/10 text-lg w-3/4 text-center mb-4 shadow-[0_0_10px_rgba(0,214,255,0.2)]"
             >
               Hire Me
             </Link>

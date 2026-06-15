@@ -6,30 +6,30 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function FinalQuest() {
   return (
-    <section id="contact" className="min-h-screen py-20 relative flex flex-col justify-between">
-      <div className="container mx-auto px-6 relative z-10 flex-grow flex flex-col items-center justify-center">
+    <section id="contact" className="min-h-screen py-12 md:py-20 relative flex flex-col justify-between">
+      <div className="container mx-auto px-5 md:px-6 relative z-10 flex-grow flex flex-col items-center justify-center">
         
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center max-w-3xl mx-auto"
+          className="text-center max-w-3xl mx-auto w-full"
         >
-          <div className="inline-block px-4 py-1 rounded-full border border-cyber-cyan/30 bg-cyber-cyan/10 text-cyber-cyan text-sm font-mono tracking-widest uppercase mb-6">
+          <div className="inline-block px-4 py-1 rounded-full border border-cyber-cyan/30 bg-cyber-cyan/10 text-cyber-cyan text-xs sm:text-sm font-mono tracking-widest uppercase mb-6">
             Stage 5: Final Quest
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">Ready to start the <br /><span className="text-gradient">next mission?</span></h2>
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 text-balance">Ready to start the <br /><span className="text-gradient">next mission?</span></h2>
           
-          <p className="text-xl text-gray-400 mb-10 leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-400 mb-10 leading-relaxed text-balance">
             I’m open to internships and fresher opportunities in Python Development, Data Analytics, AI/ML, and Full Stack Development.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16 w-full">
             <a
               href="mailto:modiraj267@gmail.com"
-              className="px-8 py-4 rounded-full bg-cyber-cyan text-black font-bold hover:bg-white transition-all shadow-[0_0_20px_rgba(0,214,255,0.4)] flex items-center gap-2"
+              className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 rounded-full bg-cyber-cyan text-black font-bold hover:bg-white transition-all shadow-[0_0_20px_rgba(0,214,255,0.4)] flex items-center justify-center gap-2"
             >
               <Mail size={20} /> Contact Me
             </a>
@@ -37,20 +37,20 @@ export default function FinalQuest() {
               href="/Raj_Modi_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-full border border-gray-600 hover:border-white text-white font-medium transition-all flex items-center gap-2"
+              className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 rounded-full border border-gray-600 hover:border-white text-white font-medium transition-all flex items-center justify-center gap-2"
             >
               <FileText size={20} /> View Resume
             </a>
             <a
               href="/Raj_Modi_Resume.pdf"
               download
-              className="px-8 py-4 rounded-full border border-gray-600 hover:border-white text-white font-medium transition-all flex items-center gap-2"
+              className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 rounded-full border border-gray-600 hover:border-white text-white font-medium transition-all flex items-center justify-center gap-2"
             >
               <Download size={20} /> Download Resume
             </a>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
             <a href="mailto:modiraj267@gmail.com" className="glassmorphism p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors group">
               <Mail className="text-gray-400 group-hover:text-cyber-cyan transition-colors" />
               <span className="text-xs font-mono">Email</span>
@@ -76,7 +76,7 @@ export default function FinalQuest() {
       </div>
 
       {/* Footer */}
-      <footer className="container mx-auto px-6 py-8 border-t border-white/5 mt-20 text-center relative z-10">
+      <footer className="container mx-auto px-5 md:px-6 py-8 border-t border-white/5 mt-20 text-center relative z-10">
         <p className="text-sm font-mono text-gray-500">
           © 2026 Raj Modi. Built with passion, code, and continuous leveling up.
         </p>

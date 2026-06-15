@@ -23,15 +23,15 @@ const categories = {
 
 export default function SkillInventory() {
   return (
-    <section id="skills" className="min-h-screen relative py-20">
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="flex items-center gap-4 mb-12">
-          <span className="text-cyber-purple font-mono tracking-widest uppercase text-sm">Stage 2</span>
-          <div className="h-[1px] w-12 bg-cyber-purple/50" />
-          <h2 className="text-3xl md:text-5xl font-bold">Skill Inventory</h2>
+    <section id="skills" className="min-h-screen relative py-12 md:py-20">
+      <div className="container mx-auto px-5 md:px-6 relative z-10">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-10 md:mb-12">
+          <span className="text-cyber-purple font-mono tracking-widest uppercase text-xs sm:text-sm">Stage 2</span>
+          <div className="hidden sm:block h-[1px] w-12 bg-cyber-purple/50" />
+          <h2 className="text-3xl md:text-5xl font-bold text-balance">Skill Inventory</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Main XP Bars */}
           <div className="space-y-8">
             <h3 className="text-xl font-mono text-gray-400 mb-6 flex items-center gap-2">

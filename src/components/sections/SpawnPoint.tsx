@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export default function SpawnPoint() {
   return (
-    <section id="about" className="min-h-[70vh] flex items-center relative py-20">
-      <div className="container mx-auto px-6 relative z-10">
+    <section id="about" className="min-h-[70vh] flex items-center relative py-12 md:py-20">
+      <div className="container mx-auto px-5 md:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -13,13 +13,13 @@ export default function SpawnPoint() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl"
         >
-          <div className="flex items-center gap-4 mb-6">
-            <span className="text-cyber-cyan font-mono tracking-widest uppercase text-sm">Stage 1</span>
-            <div className="h-[1px] w-12 bg-cyber-cyan/50" />
-            <h2 className="text-3xl md:text-5xl font-bold">About Player</h2>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-6">
+            <span className="text-cyber-cyan font-mono tracking-widest uppercase text-xs sm:text-sm">Stage 1</span>
+            <div className="hidden sm:block h-[1px] w-12 bg-cyber-cyan/50" />
+            <h2 className="text-3xl md:text-5xl font-bold text-balance">About Player</h2>
           </div>
 
-          <div className="glassmorphism p-8 md:p-10 rounded-2xl relative overflow-hidden group">
+          <div className="glassmorphism p-6 md:p-10 rounded-2xl relative overflow-hidden group">
             {/* Ambient glow */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-cyber-purple/10 rounded-full blur-[80px] -z-10 group-hover:bg-cyber-purple/20 transition-colors duration-500" />
             

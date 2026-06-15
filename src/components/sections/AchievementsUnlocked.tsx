@@ -12,12 +12,12 @@ const certificates = [
 
 export default function AchievementsUnlocked() {
   return (
-    <section id="achievements" className="min-h-[70vh] py-20 relative">
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="flex items-center gap-4 mb-12 justify-end text-right">
-          <h2 className="text-3xl md:text-5xl font-bold">Achievements Unlocked</h2>
-          <div className="h-[1px] w-12 bg-yellow-500/50" />
-          <span className="text-yellow-500 font-mono tracking-widest uppercase text-sm">Stage 4</span>
+    <section id="achievements" className="min-h-[70vh] py-12 md:py-20 relative">
+      <div className="container mx-auto px-5 md:px-6 relative z-10">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-10 md:mb-12 sm:justify-end sm:text-right">
+          <h2 className="text-3xl md:text-5xl font-bold text-balance">Achievements Unlocked</h2>
+          <div className="hidden sm:block h-[1px] w-12 bg-yellow-500/50" />
+          <span className="text-yellow-500 font-mono tracking-widest uppercase text-xs sm:text-sm">Stage 4</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -54,12 +54,12 @@ const projects = [
 
 export default function MissionsCompleted() {
   return (
-    <section id="missions" className="min-h-screen py-20 relative">
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="flex items-center gap-4 mb-12">
-          <span className="text-cyber-blue font-mono tracking-widest uppercase text-sm">Stage 3</span>
-          <div className="h-[1px] w-12 bg-cyber-blue/50" />
-          <h2 className="text-3xl md:text-5xl font-bold">Missions Completed</h2>
+    <section id="missions" className="min-h-screen py-12 md:py-20 relative">
+      <div className="container mx-auto px-5 md:px-6 relative z-10">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-10 md:mb-12">
+          <span className="text-cyber-blue font-mono tracking-widest uppercase text-xs sm:text-sm">Stage 3</span>
+          <div className="hidden sm:block h-[1px] w-12 bg-cyber-blue/50" />
+          <h2 className="text-3xl md:text-5xl font-bold text-balance">Missions Completed</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -98,7 +98,7 @@ export default function MissionsCompleted() {
                 ))}
               </div>
 
-              <div className="flex gap-4 mt-auto pt-4 border-t border-white/5">
+              <div className="flex flex-wrap gap-3 sm:gap-4 mt-auto pt-4 border-t border-white/5">
                 <a
                   href={project.link}
                   target="_blank"
