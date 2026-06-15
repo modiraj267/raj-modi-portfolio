@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "Python", xp: 85, category: "Programming" },
-  { name: "Data Analytics", xp: 80, category: "Data Analytics" },
-  { name: "SQL / MySQL", xp: 75, category: "Data Analytics" },
-  { name: "Git & GitHub", xp: 75, category: "Tools" },
-  { name: "AI/ML", xp: 70, category: "AI/ML" },
-  { name: "FastAPI / Flask", xp: 70, category: "Web Development" },
-  { name: "React.js", xp: 65, category: "Web Development" },
+  { name: "Python", level: "Advanced", width: "90%", category: "Programming" },
+  { name: "Data Analytics", level: "Strong", width: "85%", category: "Data Analytics" },
+  { name: "SQL / MySQL", level: "Strong", width: "85%", category: "Data Analytics" },
+  { name: "Git & GitHub", level: "Strong", width: "80%", category: "Tools" },
+  { name: "AI/ML", level: "Intermediate", width: "70%", category: "AI/ML" },
+  { name: "FastAPI / Flask", level: "Intermediate", width: "70%", category: "Web Development" },
+  { name: "React.js", level: "Intermediate", width: "65%", category: "Web Development" },
 ];
 
 const categories = {
@@ -48,12 +48,12 @@ export default function Skills() {
               >
                 <div className="flex justify-between items-end mb-2">
                   <span className="text-white font-medium">{skill.name}</span>
-                  <span className="text-cyber-cyan font-mono text-sm">{skill.xp} XP</span>
+                  <span className="text-cyber-cyan font-mono text-sm">{skill.level}</span>
                 </div>
                 <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden border border-white/5">
                   <motion.div
                     initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.xp}%` }}
+                    whileInView={{ width: skill.width }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.2 + index * 0.1, ease: "easeOut" }}
                     className="h-full bg-gradient-to-r from-cyber-blue to-cyber-cyan relative"
@@ -74,7 +74,7 @@ export default function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="glassmorphism p-5 rounded-xl border-t border-t-white/10 hover:border-cyber-purple/30 transition-colors group"
+                className="glassmorphism p-5 rounded-2xl border-t border-t-white/10 hover:border-cyber-purple/30 transition-colors group"
               >
                 <h4 className="text-cyber-purple font-semibold mb-3 group-hover:text-cyber-cyan transition-colors">{category}</h4>
                 <div className="flex flex-wrap gap-2">

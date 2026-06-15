@@ -46,26 +46,30 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
-            <a href="mailto:modiraj267@gmail.com" className="glassmorphism p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors group">
-              <Mail className="text-gray-400 group-hover:text-cyber-cyan transition-colors" />
-              <span className="text-xs font-mono text-center break-all">modiraj267@gmail.com</span>
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 w-full max-w-4xl mx-auto">
+            <a href="mailto:modiraj267@gmail.com" className="glassmorphism p-4 sm:p-5 rounded-2xl flex flex-row sm:flex-col items-center justify-start sm:justify-center gap-4 sm:gap-3 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors group">
+              <Mail className="text-gray-400 group-hover:text-cyber-cyan transition-colors shrink-0" size={24} />
+              <span className="text-sm sm:text-xs font-mono break-all sm:text-center">modiraj267@gmail.com</span>
             </a>
-            <a href="tel:+919624419624" className="glassmorphism p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors group">
-              <Phone className="text-gray-400 group-hover:text-cyber-cyan transition-colors" />
-              <span className="text-xs font-mono text-center whitespace-nowrap">+91 96244 19624</span>
+            
+            <a href="tel:+919624419624" className="glassmorphism p-4 sm:p-5 rounded-2xl flex flex-row sm:flex-col items-center justify-start sm:justify-center gap-4 sm:gap-3 hover:border-cyber-cyan hover:text-cyber-cyan transition-colors group">
+              <Phone className="text-gray-400 group-hover:text-cyber-cyan transition-colors shrink-0" size={24} />
+              <span className="text-sm sm:text-xs font-mono whitespace-nowrap sm:text-center">+91 96244 19624</span>
             </a>
-            <div className="glassmorphism p-4 rounded-xl flex flex-col items-center justify-center gap-2">
-              <MapPin className="text-gray-400" />
-              <span className="text-xs font-mono text-center">Gujarat, India</span>
+            
+            <div className="glassmorphism p-4 sm:p-5 rounded-2xl flex flex-row sm:flex-col items-center justify-start sm:justify-center gap-4 sm:gap-3">
+              <MapPin className="text-gray-400 shrink-0" size={24} />
+              <span className="text-sm sm:text-xs font-mono sm:text-center">Gujarat, India</span>
             </div>
-            <a href="https://github.com/modiraj267" target="_blank" rel="noopener noreferrer" className="glassmorphism p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-white hover:text-white transition-colors group">
-              <FaGithub className="text-gray-400 group-hover:text-white transition-colors" />
-              <span className="text-xs font-mono">GitHub</span>
+            
+            <a href="https://github.com/modiraj267" target="_blank" rel="noopener noreferrer" className="glassmorphism p-4 sm:p-5 rounded-2xl flex flex-row sm:flex-col items-center justify-start sm:justify-center gap-4 sm:gap-3 hover:border-white hover:text-white transition-colors group">
+              <FaGithub className="text-gray-400 group-hover:text-white transition-colors shrink-0" size={24} />
+              <span className="text-sm sm:text-xs font-mono sm:text-center">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/raj-modi-1455b2279/" target="_blank" rel="noopener noreferrer" className="glassmorphism p-4 rounded-xl flex flex-col items-center justify-center gap-2 hover:border-[#0A66C2] hover:text-[#0A66C2] transition-colors group">
-              <FaLinkedin className="text-gray-400 group-hover:text-[#0A66C2] transition-colors" />
-              <span className="text-xs font-mono">LinkedIn</span>
+            
+            <a href="https://www.linkedin.com/in/raj-modi-1455b2279/" target="_blank" rel="noopener noreferrer" className="glassmorphism p-4 sm:p-5 rounded-2xl flex flex-row sm:flex-col items-center justify-start sm:justify-center gap-4 sm:gap-3 hover:border-[#0A66C2] hover:text-[#0A66C2] transition-colors group">
+              <FaLinkedin className="text-gray-400 group-hover:text-[#0A66C2] transition-colors shrink-0" size={24} />
+              <span className="text-sm sm:text-xs font-mono sm:text-center">LinkedIn</span>
             </a>
           </div>
         </motion.div>

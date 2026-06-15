@@ -23,7 +23,7 @@ const projects = [
     built: "A multilingual AI-powered detection system.",
     features: "Analyzes plant leaf images, predicts diseases, and provides localized treatment solutions.",
     github: "https://github.com/modiraj267",
-    link: "https://github.com/modiraj267",
+    link: "",
   },
   {
     title: "Sales Analytics Dashboard",
@@ -33,7 +33,7 @@ const projects = [
     built: "An interactive business analytics dashboard.",
     features: "CSV/Excel uploads, automated KPI generation, and interactive data charts.",
     github: "https://github.com/modiraj267",
-    link: "https://github.com/modiraj267",
+    link: "",
   },
   {
     title: "AI Posture Correction & Rep Counting",
@@ -43,7 +43,7 @@ const projects = [
     built: "A real-time AI fitness assistant.",
     features: "Detects exercise posture and counts reps for push-ups/squats with voice feedback.",
     github: "https://github.com/modiraj267",
-    link: "https://github.com/modiraj267",
+    link: "",
   },
   {
     title: "Medical Recommendation System",
@@ -53,7 +53,7 @@ const projects = [
     built: "A Flask-based predictive ML system.",
     features: "Predicts possible diseases from symptoms and recommends diet/workout plans.",
     github: "https://github.com/modiraj267",
-    link: "https://github.com/modiraj267",
+    link: "",
   },
   {
     title: "VendorBridge",
@@ -63,7 +63,7 @@ const projects = [
     built: "A vendor management platform (Hackathon Project).",
     features: "Streamlined procurement workflows and vendor onboarding processes.",
     github: "https://github.com/modiraj267",
-    link: "https://github.com/modiraj267",
+    link: "",
   },
 ];
 
@@ -120,14 +120,20 @@ export default function Projects() {
               </div>
 
               <div className="flex flex-wrap gap-3 sm:gap-4 mt-auto pt-4 border-t border-white/5">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-medium text-white hover:text-cyber-cyan transition-colors"
-                >
-                  <ExternalLink size={16} /> Live Demo
-                </a>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-medium text-white hover:text-cyber-cyan transition-colors"
+                  >
+                    <ExternalLink size={16} /> Live Demo
+                  </a>
+                ) : (
+                  <span className="flex items-center gap-2 text-sm font-medium text-gray-500 cursor-not-allowed">
+                    <ExternalLink size={16} /> Demo not added yet
+                  </span>
+                )}
                 <a
                   href={project.github}
                   target="_blank"
